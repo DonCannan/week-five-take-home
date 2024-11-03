@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform">
+        <input type="text" name="fast"><br><br>
+        <input type="text" name="send"><br><br>
+        <input type="button" name="" value="ADD" onclick="add()">
+        <input type="button" name="" value="Subtract" onclick="subtract()">
+        <input type="button" name="" value="Multiply" onclick="Multiply()">
+        <input type="button" name="" value="Divide" onclick="Divide()"><br><br>
+        <input type="text" name="result">
+
+    </form>
+
+    <script type="text/javascript">
+        function add() {
+            fast=parseInt(myform.fast.value);
+            send=parseInt(myform.send.value);
+            result=fast+send;
+            myform.result.value=result;
+        }
+
+        function subtract(){
+            fast=parseInt(myform.fast.value);
+            send=parseInt(myform.send.value);
+            result=fast-send;
+            myform.result.value=result;
+        }
+
+        function Multiply(){
+            fast=parseInt(myform.fast.value);
+            send=parseInt(myform.send.value);
+            result=fast*send;
+            myform.result.value=result;
+        }
+
+        function Divide(){
+            fast=parseInt(myform.fast.value);
+            send=parseInt(myform.send.value);
+            result=fast/send;
+            myform.result.value=result;
+        }
+    </script>
+</body>
+</html>
